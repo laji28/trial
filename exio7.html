@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire d'inscription</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <Legend>Personal Information</Legend>
+            <label>Last Name:<input type="text" placeholder="Enter your Name" required></label><br>
+            <label>First Name:<input type="text" placeholder="Enter your First Name" required></label><br>
+            <label>Password:<input type="password" placeholder="" required></label><br>
+            <label>Email:<input type="email" placeholder="example@gmail.com" required></label><br>
+            <label>Tel:<input type="number" required></label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label>Date of Birth: <input type="date" required></label><br>
+            <label>Gender: <input type="radio" name="gender" value="male" required> Male <input type="radio" name="gender" value="female" required> Female </label> <br>
+            <label>City:
+                <select required>
+                    <option value="">Choose</option>
+                    <option value="Yaounde">Yaounde</option>
+                    <option value="Douala">Douala</option>
+                    <option value="Bamena">Bamena</option>
+                    <option value="Bamenda">Bamenda</option>
+                    <option value="Bafoussam">Bafoussam</option>
+                </select>
+            </label><br>
+            <label>Education Level:
+                <select required>
+                    <option value="">Choose</option>
+                    <option value="Bac">Bac</option>
+                    <option value="Bac+3">Bac+3</option>
+                    <option value="Bac+5">Bac+5</option>
+                    <option value="Doctorate">Doctorate</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Preferences</legend>
+            <label><input type="checkbox" name="newsletter">Subscribe to newsletter</label>
+            <label><input type="checkbox" name="conditions" required>I accept the terms</label>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
