@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Commande</title>
+</head>
+<body>
+    <h1>Formulaire de Commande</h1>
+    <form>
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label>Name *<br><input type="text"></label><br>
+            <label>Email *<br><input type="email"></label><br>
+            <label>Phone *<br><input type="number"></label><br>
+            <label>Address *<br><textarea required></textarea></label>
+        </fieldset>
+        <fieldset>
+            <legend>Order</legend>
+            <label><strong>Pizza Size</strong></label><br>
+            <label><input type="radio" name="size"> Small</label><br>
+            <label><input type="radio" name="size"> Medium</label><br>
+            <label><input type="radio" name="size"> Large</label><br>
+            <label><strong>Toppings</strong> </label><br>
+            <label><input type="checkbox"> Pepperoni</label><br>
+            <label><input type="checkbox"> Mushrooms</label><br>
+            <label><input type="checkbox"> Onions</label><br>
+            <label><input type="checkbox"> Sausage</label><br>
+            <label><input type="checkbox"> Bacon</label><br>
+            <label><input type="checkbox"> Extra cheese</label><br>
+            <label><input type="checkbox"> Black olives</label><br>
+            <label><input type="checkbox"> Green peppers</label><br>
+            <label><input type="checkbox"> Pineapple</label><br>
+            <label><input type="checkbox"> Spinach</label><br>
+            <label><strong>Quantity (1-10)</strong><br><input type="number" min="1" max="10"></label><br>
+            <label><strong>Drinks</strong><br>
+                <select multiple>
+                    <option>Cola</option>
+                    <option>Lemonade</option>
+                    <option>Water</option>
+                    <option>Juice</option>
+                    <option>Beer</option>
+                    <option>Fanta</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Delivery Options</legend>
+            <label><input type="radio" name="delivery"> Standard Delivery (30-45 mins)</label><br>
+            <label><input type="radio" name="delivery"> Express Delivery (15-20 mins)</label><br>
+            <label><input type="radio" name="delivery"> Pickup</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Payment</legend>
+            <label><input type="radio" name="payment"> Credit Card</label><br>
+            <label><input type="radio" name="payment"> PayPal</label><br>
+            <label><input type="radio" name="payment"> Cash on Delivery</label><br>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
