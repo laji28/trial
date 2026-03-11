@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+</head>
+<body>
+    <h1>Formulaire de Contact</h1>
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label>Name:*<br> <input type="text" placeholder="John Smith" required></label><br>
+            <label>Email:*<br> <input type="email" placeholder="johnsmith@example.com" required></label><br>
+            <label>Phone:*<br> <input type="tel" placeholder="123-456-7890" required></label><br>
+            <label>Company:*<br> <input type="text" placeholder="Enter your Company name"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Message</legend>
+            <label>Subject *<br>
+                <select required>
+                    <option value="">Choose</option>
+                    <option>Request for information</option>
+                    <option>Complaint</option>
+                    <option>Collaboration</option>
+                    <option>Service inquiry</option>
+                    <option>Other</option>
+                </select>
+            </label><br>
+            <label>Message *<br>
+                <textarea rows="5" placeholder="Enter your message here..." required></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Preferences</legend>
+            <label><input type="radio" name="urgency" value="low">Low priority</label><br>
+            <label><input type="radio" name="urgency" value="medium">Medium priority</label><br>
+            <label><input type="radio" name="urgency" value="high">High priority</label><br>
+            <label><mark><em>Preferred contact method</em></mark></label><br>
+            <label><input type="checkbox"> Phone</label><br>
+            <label><input type="checkbox"> SMS</label><br>
+            <label><input type="checkbox"> Email</label><br>
+            <label>Attach File<br><input type="file"></label><br>
+            <label>Reminder date<br><input type="date"></label><br>
+            <label>Availability<br><input type="time"></label>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
